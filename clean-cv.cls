@@ -556,6 +556,27 @@
 }{%
   \end{center}
 }
+
+% Define an entry of publication information
+% Usage: \pubentry{<title>}{<booktitle>}{<publisher>}{<year>}{<authors>}{<description>}
+\newcommand*{\pubentry}[6]{
+  \vspace{2.0mm}
+  \begin{minipage}[c]{0.49\textwidth}
+    \entrypositionstyle{#1} \\
+    \entryorganizationstyle{#2} \\
+    \entrydatestyle{#3} - \entrylocationstyle{#4} \\
+    \entryorganizationdescriptionstyle{#5} \\
+    \descriptionstyle{#6}
+  \end{minipage}%
+  \hspace{0.02\textwidth}
+}
+
+% Define an environment for pubentry
+\newenvironment{pubentries}{%
+  \vspace{\cleanCvSectionContentTopSkip}
+}{%
+}
+
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
   \begin{justify}

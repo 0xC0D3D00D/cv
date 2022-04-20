@@ -211,8 +211,8 @@
 \newenvironment{nomargin}{%
 \begin{list}{}{%
 \setlength{\topsep}{0pt}%
-\setlength{\leftmargin}{-0.4cm}%
-\setlength{\rightmargin}{-0.4cm}%
+\setlength{\leftmargin}{-0.6cm}%
+\setlength{\rightmargin}{-0.6cm}%
 \setlength{\listparindent}{\parindent}%
 \setlength{\itemindent}{\parindent}%
 \setlength{\parsep}{\parskip}%

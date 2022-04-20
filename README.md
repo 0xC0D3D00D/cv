@@ -19,13 +19,12 @@
   ```sh
   brew install pandoc
   brew tap homebrew/cask
-  brew cask install basictex
+  brew install --cask basictex
   eval "$(/usr/libexec/path_helper)"
   # Update $PATH to include `/usr/local/texlive/2020basic/bin/x86_64-darwin`
   
   sudo tlmgr update --self
   sudo tlmgr install texliveonfly
-  sudo tlmgr install xelatex
   sudo tlmgr install adjustbox
   sudo tlmgr install tcolorbox
   sudo tlmgr install collectbox
@@ -41,5 +40,5 @@
   sudo tlmgr install ifmtarg
   
   brew install fontawesome
-  cp -vf /usr/local/texlive/2021basic/texmf-dist/fonts/opentype/public/fontawesome ~/Library/Fonts # or open finder and install it manually.
+  cp -vf /usr/local/texlive/2022basic/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.otf ~/Library/Fonts
   ```
